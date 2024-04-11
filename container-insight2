@@ -1,0 +1,5 @@
+curl https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch-container-insights/latest/k8s-deployment-manifest-templates/deployment-mode/service/cwagent-prometheus/sample_cloudwatch_dashboards/fluent-bit/cw_dashboard_fluent_bit.json \
+| sed "s/{{YOUR_AWS_REGION}}/us-west-2/g" \
+| sed "s/{{YOUR_CLUSTER_NAME}}/was/g" \
+| xargs -0 aws cloudwatch put-dashboard --dashboard-name EKS_cloudwatch_dashboard --dashboard-body
+
