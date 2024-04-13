@@ -98,4 +98,7 @@ resource "aws_network_interface" "ni" {
   subnet_id       = aws_subnet.public-subnet1.id
   private_ips     = ["10.0.1.10"]
   security_groups = [aws_security_group.bastion_sg.id]
+  tags = {
+    Name = "Private IP Address for Bastion instance"
+  }
 }
