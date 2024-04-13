@@ -25,8 +25,8 @@ resource "aws_subnet" "web-subnet1" {
   map_public_ip_on_launch = false
   tags = {
     Name = "websub-01"
-    "kubernetes.io/role/internal-elb"             = 1
-    "kubernetes.io/cluster/web"                   = "shared"
+    "kubernetes.io/role/internal-elb"     = 1
+    "kubernetes.io/cluster/web"           = "shared"
   }
 }
 resource "aws_subnet" "web-subnet2" {
@@ -36,8 +36,8 @@ resource "aws_subnet" "web-subnet2" {
   map_public_ip_on_launch = false
   tags = {
     Name = "websub-02"
-    "kubernetes.io/cluster/web"                   = "shared"
-    "kubernetes.io/role/internal-elb"             = 1
+    "kubernetes.io/cluster/web"             = "shared"
+    "kubernetes.io/role/internal-elb"       = 1
   }
 }
 
@@ -48,8 +48,8 @@ resource "aws_subnet" "was-subnet1" {
   map_public_ip_on_launch = false
   tags = {
     Name = "wassub-01"
-    "kubernetes.io/cluster/web"                   = "shared"
-    "kubernetes.io/role/internal-elb"             = 1
+    "kubernetes.io/cluster/web"             = "shared"
+    "kubernetes.io/role/internal-elb"       = 1
   }
 }
 
@@ -60,8 +60,8 @@ resource "aws_subnet" "was-subnet2" {
   map_public_ip_on_launch = false
   tags = {
     Name = "wassub-02"
-    "kubernetes.io/cluster/web"                   = "shared"
-    "kubernetes.io/role/internal-elb"             = 1
+    "kubernetes.io/cluster/web"             = "shared"
+    "kubernetes.io/role/internal-elb"       = 1
   }
 }
 
