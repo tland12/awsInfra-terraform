@@ -7,17 +7,17 @@ variable "region" {
 variable "az1" {
   type = string
   default = "us-west-2a"
-  description = "aws availability zone"
+  description = "aws availability zone-2a"
 }
 variable "az2" {
   type = string
   default = "us-west-2b"
-  description = "aws availability zone"
+  description = "aws availability zone-2b"
 }
 variable "az3" {
   type = string
   default = "us-west-2c"
-  description = "aws availability zone"
+  description = "aws availability zone-2c"
 }
 
 variable "amiAL2023" {
