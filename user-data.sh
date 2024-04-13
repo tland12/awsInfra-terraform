@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo yum install httpd -y
+sudo dnf install httpd -y
 cat <<'EOF' >> /etc/httpd/conf.d/httpd-vhosts.conf
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
